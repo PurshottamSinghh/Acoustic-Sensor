@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AcousticSentinel — Predictive Maintenance",
+  title: "P.U.L.S.E. — Predictive Unsupervised Learning Sensor Edge",
   description:
-    "Industrial IoT platform for intelligent vibration analysis and predictive maintenance using piezoelectric sensing technology.",
+    "P.U.L.S.E. — Predictive Unsupervised Learning Sensor Edge. Industrial IoT platform for intelligent vibration analysis and predictive maintenance using piezoelectric sensing technology.",
 };
 
 export default function RootLayout({

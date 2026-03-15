@@ -169,7 +169,7 @@ export default function SensorScroll() {
             </div>
             <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
               <p style={{ fontSize: 11, letterSpacing: '0.3em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>
-                Initializing Sentinel
+                Initializing P.U.L.S.E.
               </p>
               <div style={{ width: 192, height: 2, backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: 4, overflow: 'hidden' }}>
                 <div
@@ -242,13 +242,12 @@ function TextOverlays({ scrollYProgress }: { scrollYProgress: MotionValue<number
           Industrial IoT
         </p>
         <h1 style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 0.95, color: 'rgba(255,255,255,0.9)' }}>
-          Acoustic<br />
           <span style={{ background: 'linear-gradient(90deg, #fff, rgba(255,255,255,0.5))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Sentinel
+            P.U.L.S.E.
           </span>
         </h1>
         <p style={{ marginTop: 24, fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: 'rgba(255,255,255,0.5)', fontWeight: 300 }}>
-          Predictive Maintenance
+          Predictive Unsupervised Learning Sensor Edge
         </p>
         <div style={{ position: 'absolute', bottom: 48, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
           <p style={{ fontSize: 10, letterSpacing: '0.25em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.2)' }}>Scroll</p>
@@ -316,7 +315,7 @@ function TextOverlays({ scrollYProgress }: { scrollYProgress: MotionValue<number
             e.currentTarget.style.boxShadow = 'none';
           }}
         >
-          Deploy Sentinel Today
+          Deploy P.U.L.S.E. Today
         </button>
       </motion.div>
     </>
