@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════
+   P.U.L.S.E. — Global Design Tokens
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  --bg: #050505;
+  --text-heading: rgba(255, 255, 255, 0.9);
+  --text-body: rgba(255, 255, 255, 0.6);
+  --accent: #6ee7b7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-body);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Typography
+   ═══════════════════════════════════════════════════════ */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-heading);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+p {
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Custom Scrollbar (Minimal)
+   ═══════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ═══════════════════════════════════════════════════════
+   Loading Spinner Animations
+   ═══════════════════════════════════════════════════════ */
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.pulse-ring {
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ═══════════════════════════════════════════════════════
+   Selection
+   ═══════════════════════════════════════════════════════ */
+
+::selection {
+  background-color: rgba(110, 231, 183, 0.2);
+  color: white;
+}
